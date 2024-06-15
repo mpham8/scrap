@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<p>agenda</p>
+
+  {% for list in shared_lists %}
+    <p>{{list.name}}</p>
+  {% endfor %}
+
+  {% for task in tasks %}
+    <p>{{task.name}}</p>
+  {% endfor %}
+
+{% endblock content %}
